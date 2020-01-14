@@ -1,0 +1,77 @@
+@import "reset.css";
+
+body{
+    background-color: rgb(112, 126, 252);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.canvas{
+    width: 700px;
+    height: 700px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+
+
+
+
+.controls{
+    margin: 80px;
+    align-items: center;
+
+    display: flex;
+    flex-direction: column; 
+    /* 한 블록 단위당 열을 기준으로 나눔
+       즉, 블록은 한 줄을 기준으로 정렬한다. */
+}
+
+.controls .controls__range{
+    margin-bottom: 30px;
+    
+}
+
+.controls__buttons{
+    margin-bottom: 30px;
+}
+
+.controls .controls__buttons button{
+     all: unset;
+     cursor: pointer;
+     background-color: white;
+     padding: 5px 0;
+     width: 100px;
+     text-align: center;
+     border-radius: 5px;
+     box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+     border: 2px solid rgba(0, 0, 0, 0.8);
+     /* color: rgba(0, 0, 0, 0.07); */
+     font-weight: 700;
+     font-size: 16px;
+     text-transform: uppercase;
+
+}
+
+.controls__buttons button:active{
+    transform: scale(0.9);
+}
+
+
+.controls .controls__colors{
+    display: flex;
+}
+
+.controls__colors .controls__color{
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     cursor: pointer;
+     box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+
+}
